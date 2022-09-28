@@ -5,5 +5,3 @@ API
    :toctree: generated
 
    fitting_functions
-   lumache
-   
