@@ -16,7 +16,7 @@ increasing excitation laser power. The function has the form
            I(P) = \frac{I_{inf}  P} {P + P_{sat}}
            
 where :math:`I_{inf}` is the asymptotic emission intensity, and :math:`P_{sat}` is 
-the power at which :math:`I(P) = 0.5*I_{inf}`.
+the power at which :math:`I(P) = \frac{1}{2} I_{inf}`.
 
 Here is a simple example of its use:
 
