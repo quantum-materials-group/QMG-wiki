@@ -4,11 +4,6 @@ A collection of functions to fit to experimental data.
 
 __version__ = "0.1.0"
 
-
-class InvalidKindError(Exception):
-    """Raised if the kind is invalid."""
-    pass
-
 def power_saturation(x, *p0):
     """
     A hyperbolic function modeling the saturation of SPE emission under
@@ -20,7 +15,6 @@ def power_saturation(x, *p0):
     :type x: list[float] or np.array([float])
     :param *p0: Parameters for hyperbolic function
     :type *p0: list[I_inf, P_sat]
-    :raise fitting_functions.InvalidKindError: If the kind is invalid.
     :return: 1D array of intensity values
     :rtype: type(x)
     """
