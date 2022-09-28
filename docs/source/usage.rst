@@ -2,7 +2,7 @@ Usage
 =====
 
 Fitting a function to data
-----------------
+--------------------------
 
 To plot a power saturation curve, 
 you can use the ``fitting_functions.power_saturation()`` function:
