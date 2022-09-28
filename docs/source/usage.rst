@@ -1,34 +1,17 @@
 Usage
 =====
 
-.. _installation:
-
-Installation
-------------
-
-To use Lumache, first install it using pip:
-
-.. code-block:: console
-
-   (.venv) $ pip install lumache
-
-Creating recipes
+Fitting a function to data
 ----------------
 
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
+To plot a power saturation curve, 
+you can use the ``fitting_functions.power_saturation()`` function:
 
-.. autofunction:: lumache.get_random_ingredients
+.. autofunction:: fitting_functions.power_saturation
 
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
+Here is a simple example:
 
-.. autoexception:: lumache.InvalidKindError
-
-For example:
-
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
+>>> from fitting_functions import power_saturation
+>>> intensities = power_saturation(powers, p0=[I_inf, P_sat])
+[0.1, 1.4, ..., 5.7]
 
