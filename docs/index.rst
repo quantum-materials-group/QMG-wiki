@@ -17,6 +17,6 @@ Contents
 --------
 
 .. toctree::
-   :maxdepth: 4
+
    pages/usage
    pages/api
