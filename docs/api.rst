@@ -4,4 +4,5 @@ API
 .. autosummary::
    :toctree: generated
 
-   example/fitting_function
+   fitting_functions
+   phd_fns
