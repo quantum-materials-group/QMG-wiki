@@ -4,7 +4,7 @@ A collection of functions to fit to experimental data.
 
 __version__ = "0.1.0"
 
-def power_saturation(x, *p0):
+def power_saturation(x, p0):
     """
     A hyperbolic saturation function.
 
