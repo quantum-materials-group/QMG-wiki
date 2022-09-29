@@ -1,7 +1,7 @@
 Quantum Materials Group Wiki
 =======================================
 .. image:: https://readthedocs.org/projects/qmg-wiki/badge/?version=latest
-    :target: https://qmg-wiki.readthedocs.io/en/latest/?badge=latest
+    :target: https://qmg-wiki.readthedocs.io/en/latest
     :alt: Documentation Status
 
 Documentation
