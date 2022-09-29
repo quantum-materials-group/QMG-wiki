@@ -18,6 +18,7 @@ Contents
 
 .. toctree::
 
-   usage
+   pages/usage
    pages/api
-2
+
+4
