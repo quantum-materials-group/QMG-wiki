@@ -9,6 +9,10 @@ knowledge that may not be fully detailed elsewhere.
 
    This project is under active development.
 
+Find the source code and contribute to this project at
+
+https://github.com/quantum-materials-group/QMG-wiki.git
+
 Contents
 --------
 
