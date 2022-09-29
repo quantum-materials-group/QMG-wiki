@@ -4,5 +4,5 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "QMG-wiki"
-authors = [{name = "Graziella", email = "graziella@lumache"}]
+authors = [{name = "Mc Studently", email = "quantum-materials-group@physicist.net"}]
 dynamic = ["version", "description"]
