@@ -19,7 +19,8 @@ Contents
 .. toctree::
 
    usage
+   fab_sop
    api
    pages/openData
 
-5
+6
