@@ -4,6 +4,6 @@ API
 .. autosummary::
    :toctree: generated
 
-   fitting_functions
+   example/fitting_functions
 
-dfashfa
+1
