@@ -12,4 +12,5 @@ Read the documentation online at http://qmg-wiki.rtfd.io/
 
 "Write up the SOP!"
 
-"Teach me, Jake! -HZ"
+.. image:: pixelcat.png
+  :width: 200
