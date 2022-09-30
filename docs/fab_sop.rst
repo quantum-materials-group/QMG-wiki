@@ -179,7 +179,7 @@ Stuff you need:
   - Curing Agent
 
 
-![image](https://user-images.githubusercontent.com/66366271/193190177-ab176447-2659-4b12-9b52-f030936f5298.png)
+![images](https://user-images.githubusercontent.com/66366271/193190177-ab176447-2659-4b12-9b52-f030936f5298.png)
 
 Option 1: (if only a little is needed)
 
