@@ -1,6 +1,9 @@
 Fabrication Methods
 ===================
 
+**The variables are subject to change depending on the application of your particular sample!!!**
+
+
 Photolithography
 ----------------
 
@@ -69,7 +72,7 @@ Steps:
 
 12. Develop for 10 seconds (INSERT DIAGRAM) then immediately into water.
 
-13. Dry surface with N2, bottom side with Kimtech.
+13. Dry surface with N\ :sub: '2'\, bottom side with Kimtech.
 
 14. Check with microscope.
 
@@ -102,7 +105,6 @@ Oxygen Plasma Cleaning
 
    :math:`\rightarrow` When gas is ready, turn RF on for 10 seconds.
    
-**The variables are subject to change depending on the application of your particular sample!!!**
 
 
 Chemical Vapour Deposition - SEKI
@@ -122,7 +124,7 @@ Chemical Vapour Deposition - SEKI
 
    :math:`\rightarrow` SEKI is powered by the bottom right switch (under the big CVD) and is marked with AXSID. Once you hear air hissing it means it is on.
    
-7. Turn on computer (pw: PAT2), open IE and select appropriate gas for your application (H_{2}, N_{2} and ?)
+7. Turn on computer (pw: PAT2), open IE and select appropriate gas for your application (H\ :sub: '2'\, N\ :sub: '2'\ and ?)
 
    - Check flow point: 0
    
@@ -154,7 +156,7 @@ To shut down:
 
 5. Shut off roughing pump
 
-6. Bring down stage very slowly by dropping screws 1 mm each, vent a little Ar_{2} (green screw)
+6. Bring down stage very slowly by dropping screws 1 mm each, vent a little Ar\ :sub: '2'\ (green screw)
 
 7. Slowly take screw off and lower stage. 
 
