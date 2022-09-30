@@ -1,6 +1,11 @@
 Fabrication Methods
 ===================
 
+Overview
+
+Please be aware the following SOPs are not for untrained users but for people who have *had* training previously and just need a bit of reminder.
+
+
 **The variables are subject to change depending on the application of your particular sample!!!**
 
 
@@ -98,7 +103,7 @@ Oxygen Plasma Cleaning
      - 25
    * - Process time
      - 10
-   * - O_{2} Set
+   * - O :sub:`2` Set
      - 25
 
 4. Turn gas on
@@ -161,3 +166,32 @@ To shut down:
 7. Slowly take screw off and lower stage. 
 
 8. Shut stage, screw in and turn on roughing pump again.
+
+
+PDMS
+----
+Making PDMS mould/anything
+
+Stuff you need:
+
+  - 184-Silicone SYLGARD
+
+  - Curing Agent
+
+
+![image](https://user-images.githubusercontent.com/66366271/193190177-ab176447-2659-4b12-9b52-f030936f5298.png)
+
+Option 1: (if only a little is needed)
+
+   - Mix on glass lside or small palstic weigh boat
+   
+Option 2:
+   - Mix in beaker (disposable only)
+   
+Place on heat stage to cure:
+
+   ~ 150 C = 10 min
+   
+   ~ 100 C = 30 min
+
+
