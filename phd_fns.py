@@ -143,6 +143,7 @@ def Voigt_FWHM(x, *p0):
     1D array
         Intensity of spectrum
     """
+    from scipy.special import wofz
     a = p0[1]
     x0 = p0[2]
     Gaussian_FWHM = p0[3]
@@ -471,6 +472,7 @@ def Read_PHU(fname):
 ''' winspec.py - read SPE files created by WinSpec with Princeton Instruments' cameras. '''
 
 import ctypes, os
+import struct
 import logging
 
 __all__ = ['SpeFile', 'print_offsets']
