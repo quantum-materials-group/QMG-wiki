@@ -180,6 +180,8 @@ Stuff you need:
 
 <img src="QMG-wiki/docs/pdms.png">
 
+.. image:: pdms.png
+  :width: 400
 
 Option 1: (if only a little is needed)
 
