@@ -2,6 +2,7 @@ Fabrication Methods
 ===================
 
 Overview
+--------
 
 Please be aware the following SOPs are not for untrained users but for people who have *had* training previously and just need a bit of reminder.
 
@@ -194,5 +195,65 @@ Place on heat stage to cure:
    ~ 150 C = 10 min
    
    ~ 100 C = 30 min
+   
+Lindberg Blue Tube Furnace (max 1100 C)
+---------------------------------------
+
+Stuff you need:
+
+- EtOH (for cleaning)
+
+- A clean tube
+
+- Vacuum components (clamps, allan keys, o-rings--> call in the drawer beneath the furnace)
+
+Loading sample:
+
+1. Close B side of the tube
+
+2. Wipe boat/tube with EtOH
+
+3. Push sample to centre using cleaned rod
+
+4. Close A side
+
+To pump:
+
+   :math:`\rightarrow` Pump down
+
+   - Turn 'MAX' handle up, switch pump *on* at outlet.
+   
+   - Run Ar :sub:`2`
+   
+      -on computer: ``➔``
+      
+   - Set point 'B' to 100 sccm, check MFC is stabilised.
+   
+   - Wait 10 mins.
+
+Program (setting annealing temp): 
+``P``
+``^``
+``˅``
+``<``
+
+For top menu, press:
+
+``P``
+
+.. list-table::
+   :widths: 25 25
+
+   * - Pr n
+     - Select the program number
+     
+Sub menu, press together x 2:
+
+.. list-table::
+   :widths: 25 25
+
+   * - ``P``
+     - ``<``
+
 
 
