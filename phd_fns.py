@@ -59,7 +59,7 @@ def Lorentzian_FWHM_multi(x, *p0):
     x : 1D array
         Energy values
     *p0 : List
-        [N * [amplitude, horizontal offset, FWHM, vertical offset]]
+        [N * [amplitude, horizontal offset, FWHM], vertical offset]
 
     Returns
     -------
@@ -67,13 +67,12 @@ def Lorentzian_FWHM_multi(x, *p0):
         Intensity of spectrum
     """
     y = np.zeros_like(x)
-    for i in range(0, len(p0), 4):
+    for i in range(0, len(p0)-1, 3):
         a = p0[i]
         x0 = p0[i+1]
         FWHM = p0[i+2]
-        c = p0[i+3]
-        y += a/(1 + 4 * (x-x0)**2 / FWHM**2) + c
-    return y
+        y += a / (1 + 4 * (x-x0)**2 / FWHM**2)
+    return y + p0[-1]
 
 def Gaussian_FWHM(x, *p0):
     """
@@ -110,7 +109,7 @@ def Gaussian_FWHM_multi(x, *p0):
     x : 1D array
         Energy values
     *p0 : List
-        [N * [amplitude, horizontal offset, FWHM, vertical offset]]
+        [N * [amplitude, horizontal offset, FWHM], vertical offset]
 
     Returns
     -------
@@ -118,13 +117,12 @@ def Gaussian_FWHM_multi(x, *p0):
         Intensity of spectrum
     """
     y = np.zeros_like(x)
-    for i in range(0, len(p0), 4):
+    for i in range(0, len(p0)-1, 3):
         a = p0[i]
         x0 = p0[i+1]
         FWHM = p0[i+2]
-        c = p0[i+3]
-        y += a * np.exp(- 4 * np.log(2) * (x-x0)**2 / FWHM**2) + c
-    return y
+        y += a * np.exp(- 4 * np.log(2) * (x-x0)**2 / FWHM**2)
+    return y + p0[-1]
 
 def Voigt_FWHM(x, *p0):
     """
