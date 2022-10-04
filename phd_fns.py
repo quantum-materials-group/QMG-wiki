@@ -136,7 +136,7 @@ def Voigt_FWHM(x, *p0):
     x : 1D array
         Energy values
     *p0 : List
-        [amplitude, horizontal offset, Gaussian FWHM, Lorentzian FWHM, vertical offset]
+        [amplitude, Gaussian FWHM, Lorentzian FWHM, vertical offset]
 
     Returns
     -------
@@ -144,15 +144,38 @@ def Voigt_FWHM(x, *p0):
         Intensity of spectrum
     """
     from scipy.special import wofz
-    a = p0[1]
-    x0 = p0[2]
-    Gaussian_FWHM = p0[3]
-    alpha = 0.5*Gaussian_FWHM
-    Lorentzian_FWHM = p0[4]
-    gamma = 0.5*Lorentzian_FWHM
-    c = p0[5]
-    sigma = alpha / np.sqrt(2 * np.log(2))
-    return a * np.real(wofz(((x-x0) + 1j*gamma)/sigma/np.sqrt(2))) / sigma /np.sqrt(2*np.pi) + c
+    
+    a = p0[0]
+    
+    G_FWHM = p0[1]
+    sigma = G_FWHM / np.sqrt(8 * np.log(2))
+    
+    L_FWHM = p0[2]
+    gamma = L_FWHM / 2
+    
+    c = p0[3]
+    
+    z = (x + 1j*gamma) / (sigma * np.sqrt(2))
+    
+    return a * np.real(wofz(z)) / (sigma * np.sqrt(2 * np.pi)) + c
+
+def Voigt_linewidth(G_FWHM, L_FWHM):
+    """
+    About: Computes FWHM of Voigt function, given constituent widths.
+           
+    Parameters
+    ----------
+    G_FWHM : float
+        FWHM of Gaussian component
+    L_FWHM : float
+        FWHM of Lorentzian component
+
+    Returns
+    -------
+    float
+        FWHM of Voigt function
+    """
+    return 0.5346 * L_FWHM + np.sqrt(0.2166 * L_FWHM**2 + G_FWHM**2)
 
 def power_saturation(x, *p0):
     """
