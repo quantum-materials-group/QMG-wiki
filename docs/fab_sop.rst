@@ -199,6 +199,8 @@ Place on heat stage to cure:
 Lindberg Blue Tube Furnace (max 1100 C)
 ---------------------------------------
 
+**INCOMPLETE 07/10/22**
+
 Stuff you need:
 
 - EtOH (for cleaning)
@@ -257,3 +259,15 @@ Sub menu, press together x 2:
 
 
 
+
+Spectrometer SpecWin Settings
+-----------------------------
+
+**INCOMPLETE 07/10/22**
+
+Background Correction Steps
+
+In order to take background correctly, the following settings must be in place under *Experiment Setup*
+
+.. image:: ADC.png
+  :width: 150pt
