@@ -21,6 +21,6 @@ Contents
    usage
    fab_sop
    api
-   pages/openData
+   pages/howtoaddapage
 
 7

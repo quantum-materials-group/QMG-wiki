@@ -180,7 +180,7 @@ Stuff you need:
   - Curing Agent
 
 
-.. image:: pdms.png
+.. image:: _static/pdms.png
   :width: 200
 
 Option 1: (if only a little is needed)
