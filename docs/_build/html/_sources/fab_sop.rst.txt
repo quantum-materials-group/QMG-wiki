@@ -271,7 +271,3 @@ In order to take background correctly, the following settings must be in place u
 
 .. image:: ADC.png
   :width: 150pt
-
-
-How To Add a New Page to the Wiki
----------------------------------
