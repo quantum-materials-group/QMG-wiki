@@ -17,7 +17,7 @@ Contents
 --------
 
 .. toctree::
-   index
+   index <self>
    usage
    fab_sop
    api
