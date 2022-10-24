@@ -12,5 +12,5 @@ Read the documentation online at http://qmg-wiki.rtfd.io/
 
 "Write up the SOP!"
 
-.. image:: _static/pixelcat.png
+.. image:: docs/_static/pixelcat.png
   :width: 200
