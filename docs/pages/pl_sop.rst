@@ -1,5 +1,5 @@
-PL Methods
-===================
+Photoluminescence Methods
+==========================
 
 Princeton Spectrometer SpecWin Settings
 -----------------------------
