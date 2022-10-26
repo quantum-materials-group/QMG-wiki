@@ -1,3 +1,6 @@
+PL Methods
+===================
+
 Princeton Spectrometer SpecWin Settings
 -----------------------------
 
