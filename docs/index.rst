@@ -19,9 +19,10 @@ Contents
 .. toctree::
    Home <self>
    usage
-   fab_sop
+   pages/fab_sop
    pages/pl_sop
-   api
    pages/howtoaddapage
+   api
+   
 
 7
