@@ -1,0 +1,29 @@
+ScanSoft
+-----------------------------
+Uberlab.llb is the labview library that contains all the scripts (labview .vi files) that are used to create PL maps.
+
+This library primary job is to interface with a National Instruments Data Aquisition board (NI DAQ). The DAQ controls the position of a piezo stage or a angle of scanning mirror using a DC output, and receives a signal from APDs in the form of a stream of pulses which is recoreded as a countrate.
+
+
+Princeton Spectrometer SpecWin Settings
+-----------------------------
+
+**INCOMPLETE 07/10/22**
+
+Background Correction Steps
+
+In order to take background correctly, the following settings must be in place under *Experiment Setup*
+
+.. image:: ADC.png
+  :width: 150pt
+
+
+Andor Spectrometer 
+-----------------------------
+
+**INCOMPLETE 26/10/22**
+
+AttoDry Sample Exchange
+-----------------------------
+
+**INCOMPLETE 26/10/22**

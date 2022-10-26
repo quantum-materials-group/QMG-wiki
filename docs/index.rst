@@ -17,9 +17,10 @@ Contents
 --------
 
 .. toctree::
-   index <self>
+   Home <self>
    usage
    fab_sop
+   pages/pl_sop
    api
    pages/howtoaddapage
 
