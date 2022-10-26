@@ -34,7 +34,7 @@ To reference these pictures in your SOP use:
     |pixelcat|
 
     .. |pixelcat| image:: ../_static/pixelcat.png
-        :width: 90% 
+        :width: 45% 
 
 
 Below is an image of a pixel cat.
