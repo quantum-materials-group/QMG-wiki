@@ -6,6 +6,7 @@ Currently in no particular order.
 __version__ = "0.1.0"
 
 import numpy as np
+import matplotlib.pyplot as plt
 
 def load_files():
     """
