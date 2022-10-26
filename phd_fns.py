@@ -6,6 +6,7 @@ Currently in no particular order.
 __version__ = "0.1.0"
 
 import numpy as np
+import matplotlib.pyplot as plt
 
 def load_files():
     """
@@ -23,6 +24,24 @@ def load_files():
     files_path = filedialog.askopenfilenames(initialdir = "C:", title = "Select files", filetypes = (("all files","*.*"), ("text files","*.txt")))
     root.attributes('-topmost', True)
     return files_path
+
+def save_figure(file_path, img_name):
+    """
+    About: saves a PNG figure into a specified folder.
+    
+    Parameters
+    ----------
+    file_path : string
+        System path to the folder where the image will be saved.
+    img_name : string
+        Name of image (without image type suffix).
+
+    Returns
+    -------
+    empty
+    """
+    folder_path = "/".join(file_path.split('/')[:-1])
+    plt.savefig(folder_path + '/' + img_name + '.png')
 
 def Lorentzian_FWHM(x, *p0):
     """
