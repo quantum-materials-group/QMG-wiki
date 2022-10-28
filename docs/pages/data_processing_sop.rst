@@ -23,7 +23,7 @@ Loading Data
 
 To get our experimental data, which may be saved as a ``.txt`` file or a ``.spe`` file or whatever, into Python, we can use the ``load_files`` function from the ``phd_fns.py`` library.
 
-.. autofunction:: phd_fns.load_files
+.. autofunction:: ~/phd_fns.load_files
 
 Running this function in a script makes a box pop up, from which we can navigate to and select the data files we want to import. 
 The ``load_files`` function returns a list, with length equal to the number of files selected, where each entry in the list is the pathway to the file on our computer.
@@ -35,33 +35,33 @@ Most importantly, the script that does the data processing (``plot_PL_spectra.py
 |project-folder| |experimental-folder1|
 |python-folder2|
 
-.. |project-folder| image:: ../_static/Load_and_plot_demo/project-folder.PNG
+.. |project-folder| image:: ../_static/Load_and_plot_demo/project-folder.png
    :width: 45%
 
-.. |experimental-folder1| image:: ../_static/Load_and_plot_demo/experimental-folder1.PNG
+.. |experimental-folder1| image:: ../_static/Load_and_plot_demo/experimental-folder1.png
    :width: 45%
 
-.. |python-folder2| image:: ../_static/Load_and_plot_demo/python-folder2.PNG
+.. |python-folder2| image:: ../_static/Load_and_plot_demo/python-folder2.png
    :width: 45%
 
 In Spyder, we can write a script that uses ``load_files`` to, for example, plot PL spectra. When running the script, a prompt appears to allow file selection:
 
 |spyder-run1|
 
-.. |spyder-run1| image:: ../_static/Load_and_plot_demo/spyder-run1.PNG
+.. |spyder-run1| image:: ../_static/Load_and_plot_demo/spyder-run1.png
    :width: 90%
 
 If everything works out, we should see that the files have been successfuly opened and processed by Python:
 
 |spyder-plot1|
 
-.. |spyder-plot1| image:: ../_static/Load_and_plot_demo/spyder-plot1.PNG
+.. |spyder-plot1| image:: ../_static/Load_and_plot_demo/spyder-plot1.png
    :width: 90%
 
 Note that the ``files_path`` variable is a kind of list, while the elements of ``files_path`` are actually strings:
 
 |files_path-types|
 
-.. |files_path-types| image:: ../_static/Load_and_plot_demo/files_path-types.PNG
+.. |files_path-types| image:: ../_static/Load_and_plot_demo/files_path-types.png
    :width: 90%
 
