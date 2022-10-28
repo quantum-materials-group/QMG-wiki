@@ -1,1 +1,0 @@
-**Orders an Shipping Guide**
