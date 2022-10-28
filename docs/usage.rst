@@ -23,11 +23,3 @@ Here is a simple example of its use:
 >>> from fitting_functions import power_saturation
 >>> intensities = power_saturation(powers, p0=[I_inf, P_sat])
 [0.1, 1.4, ..., 5.7]
-
-Here is a video that goes into some more detail about how to import data, plot it, and fit it with predefined functions.
-
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/vvoZlA9W7AQ" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-    </div>
