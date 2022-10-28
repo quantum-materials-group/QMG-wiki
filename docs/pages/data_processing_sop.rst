@@ -32,17 +32,26 @@ We can then use other functions like ``np.genfromtxt`` to actually open up the f
 To begin, we can make sure our project folder is well organised. It is handy to have a folder containing experimental data, and another folder containing Python script.
 Most importantly, the script that does the data processing (``plot_PL_spectra.py`` in the example below) should be in the same folder as the ``phd_fns.py`` library.
 
-|project-folder| |experimental-folder1|
-|python-folder2|
+Project folder:
+
+|project-folder|
 
 .. |project-folder| image:: ../_static/Load_and_plot_demo/project-folder.png
-   :width: 45%
+   :width: 50%
 
-.. |experimental-folder1| image:: ../_static/Load_and_plot_demo/experimental-folder1.png
-   :width: 45%
+Python folder inside project folder:
+
+|python-folder2|
 
 .. |python-folder2| image:: ../_static/Load_and_plot_demo/python-folder2.png
-   :width: 45%
+   :width: 50%
+
+Experimental data folder inside project folder:
+
+|experimental-folder1|
+
+.. |experimental-folder1| image:: ../_static/Load_and_plot_demo/experimental-folder1.png
+   :width: 50%
 
 In Spyder, we can write a script that uses ``load_files`` to, for example, plot PL spectra. When running the script, a prompt appears to allow file selection:
 
