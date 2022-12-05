@@ -2,7 +2,7 @@ Photoluminescence Methods
 ==========================
 
 Princeton Spectrometer SpecWin Settings
------------------------------
+----------------------------------------
 
 **INCOMPLETE 07/10/22**
 
