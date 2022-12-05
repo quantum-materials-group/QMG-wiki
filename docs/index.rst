@@ -22,6 +22,7 @@ Contents
    pages/fab_sop
    pages/pl_sop
    pages/data_processing_sop
+   pages/Notes
    pages/howtoaddapage
    api
    pages/orders_&_shipping
