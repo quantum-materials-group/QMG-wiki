@@ -1,5 +1,4 @@
 # Configuration file for the Sphinx documentation builder.
-from recommonmark.parser import CommonMarkParser
 
 # -- Project information
 
@@ -26,10 +25,6 @@ intersphinx_mapping = {
     'sphinx': ('https://www.sphinx-doc.org/en/master/', None),
 }
 intersphinx_disabled_domains = ['std']
-
-source_parsers = {'.md': CommonMarkParser}
-
-source_suffix = ['.rst', '.md']
 
 templates_path = ['_templates']
 
