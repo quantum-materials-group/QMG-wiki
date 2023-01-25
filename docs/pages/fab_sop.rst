@@ -89,7 +89,7 @@ Oxygen Plasma Cleaning
 
 2. Vent vacuum
 
-   :math:`\rightarrow` Open Lid :math:`\rightarrow` Load sample :math:`\rightarrow` Close lid
+   :math:`\rightarrow` Open Lid :math:`\rightarrow` Load sample :math:`\rightarrow` Close lid :math:`\rightarrow` Turn on vacuum and wait ???pA
 
 3. Select recipe:
 
