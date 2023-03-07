@@ -259,7 +259,7 @@ Sub menu, press together x 2:
      
      
 Blue Emitters in hBN 
-=========================================
+---------------------
 **Pre-characterisation using Cathodoluminescence**
 
 Cathodoluminescence (CL) characterisation is nessesory for making blue emitters in **Pristine** and **Annealed** Japanese flakes.
