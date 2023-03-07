@@ -256,7 +256,52 @@ Sub menu, press together x 2:
 
    * - ``P``
      - ``<``
+     
+     
+Blue Emitters in hBN 
+=========================================
+**Pre-characterisation using Cathodoluminescence**
+
+Cathodoluminescence (CL) characterisation is nessesory for making blue emitters in **Pristine** and **Annealed** Japanese flakes.
+
+hBN flakes with a sharp UV emission at 305 nm (and associated phonon replicas at 320, 334, 351 nm) usually generate 436nm blue emission by electron irradiation.
+
+However, the percentages of cration of blue emitters are different depending on the flake type, annealing condition and other characteristics.
+From our tested results, Yellow (13C) flake always emits 436 nm emission even with short irradiation time. Annealed flakes has higher success rate compated to Pristine flakes.
+
+Reference: `Gale et.al. (2022)
+<https://pubs.acs.org/doi/10.1021/acsphotonics.2c00631>`_.
 
 
+**Electron Beam Irradiation** 
 
+Tested condition
+   5 kV
+   beam current 0.8 nA
+   dwell time: 1 msec
+   
+- Pristine Japanese Flakes
+   Longer irradiation time or higher beam current is required.
+   4, 6, 9, 16, 25, 36, 49, 64 sec
+   Longer than 25 seconds of irradiation time usually works.
+   
+- Annealed Japanese Flakes (Annealed after the exfoliation)
+Annealing condition : 1000 degrees in Nitrogen for three hours. (The sample was measured for Blue photophysics paper)
+1, 2, 4, 6 sec in spot mode 
+
+- Yellow (13C) Flakes
+Tested condition
+0.5 sec or imaging (scanning) can activate blue emitters.
+1, 2, 4, 6 sec in spot mode 
+    
+                                                            
+**Issues**
+
+Carbon conctamination
+-> Use ozon cleaning before the irradiation and the measurements.
+
+                                                                    Written by Karin Yamamura
+                                                                    
+                                                                    
+============                                                                    
 
