@@ -300,8 +300,4 @@ Tested condition
 Carbon conctamination
 -> Use ozon cleaning before the irradiation and the measurements.
 
-                                                                    Written by Karin Yamamura
-                                                                    
-                                                                    
-============                                                                    
 
