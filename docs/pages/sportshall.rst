@@ -1,11 +1,11 @@
-Ross Milbourne Sports Hall
-==========================
+Ross Milbourne Sports Hall Booking
+===================================
 
 Overview
 ---------
-Once in a while when Supreme Leader Igor permits non-laboratory-based activities the group may want to exercise.
+Once in a while when Supreme Leader Igor permits non-laboratory-based activities so the group may exercise.
 
-The sports hall can facilitate sports games for team building purposes.
+The sports hall can facilitate sports games for team building purposes and for good health.
 
 The halls are extremely popular and must be booked well in advance during the semester.
 
