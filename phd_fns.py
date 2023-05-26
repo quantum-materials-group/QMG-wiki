@@ -391,7 +391,7 @@ def g2_3LS(x, *p0):
     tau2 = p0[4]
     return amp * (1 - (1 + bunching) * np.exp( - np.abs(x - x0) / tau1) + bunching * np.exp( - np.abs(x - x0) / tau2))
 
-def g2_rabi2(x, *p0):
+def g2_rabi(x, *p0):
     """
     About: Alex Clark's ~most correct~ Rabi g2 function.
            See 10.1103/PhysRevA.94.063839
