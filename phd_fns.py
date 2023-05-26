@@ -42,6 +42,23 @@ def save_figure(file_path, img_name):
     """
     folder_path = "/".join(file_path.split('/')[:-1])
     plt.savefig(folder_path + '/' + img_name + '.png')
+    
+def save_figure_here(file_path):
+    """
+    About: saves a PNG figure into the same folder as the data file.
+    
+    Parameters
+    ----------
+    file_path : string
+        System path to the folder where the image will be saved.
+        Usually "save_figure_here(files_path[0])" is sufficient.
+    Returns
+    -------
+    empty
+    """
+    folder_path = "/".join(file_path.split('/')[:-1])
+    img_name = file_path.split('/')[-1].split('.')[0]
+    plt.savefig(folder_path + '/' + img_name + '.png')
 
 def Lorentzian_FWHM(x, *p0):
     """
@@ -321,6 +338,58 @@ def meV2nm_relative(x, lambda0):
     k = 6.242e21        # converts Newton-metres to millielectron-volts
     return h * c * k * 1e9 * lambda0 / (x * lambda0 + h * c * k * 1e9)
 
+def g2_2LS(x, *p0):
+    """
+    About: The second order correlation function for a two level system, 
+           accounting for horizontal offset and vertical scaling. This is
+           sufficient for any 'short' g2, but note that values of g2 greater
+           than 1.0 around the shoulder of the central dip may indicate
+           some other phenomenon such as bunching due to a third system level.
+
+    Parameters
+    ----------
+    x : 1D array
+        Delay time between photon detection events across APDs.
+    *p0 : List
+        [amplitude, purity, horizontal offset, lifetime]
+
+    Returns
+    -------
+    1D array
+        Second order correlation.
+    """
+    amp = p0[0]
+    purity = p0[1]
+    x0 = p0[2]
+    tau1 = p0[3]
+    return amp * (1 - purity * np.exp( - np.abs(x - x0) / tau1))
+
+def g2_3LS(x, *p0):
+    """
+    About: The second order correlation function for a three level system, 
+           accounting for horizontal offset and vertical scaling. Relevant when
+           values of g2 around the shoulder of the dip are greater than 1.0.
+           See Sontheimer 2017 10.1103/PhysRevB.96.121202
+
+    Parameters
+    ----------
+    x : 1D array
+        Delay time between photon detection events across APDs.
+    *p0 : List
+        [amplitude, horizontal offset, lifetime, 
+         bunching amplitude, bunching lifetime]
+
+    Returns
+    -------
+    1D array
+        Second order correlation.
+    """
+    amp = p0[0]
+    x0 = p0[1]
+    tau1 = p0[2]
+    bunching = p0[3]
+    tau2 = p0[4]
+    return amp * (1 - (1 + bunching) * np.exp( - np.abs(x - x0) / tau1) + bunching * np.exp( - np.abs(x - x0) / tau2))
 
 def g2_rabi2(x, *p0):
     """
@@ -329,20 +398,20 @@ def g2_rabi2(x, *p0):
 
     Parameters
     ----------
-    x : TYPE
-        DESCRIPTION.
-    *p0 : TYPE
-        DESCRIPTION.
+    x : 1D array
+        Delay time between photon detection events across APDs.
+    *p0 : List
+        [amplitude, purity, horizontal offset, lifetime, 
+         pure dephasing time, Rabi frequency]
 
     Returns
     -------
-    TYPE
-        DESCRIPTION.
-
+    1D array
+        Second order correlation.
     """
-    purity = p0[0]
-    x0 = p0[1]
-    cts = p0[2]
+    amp = p0[0]
+    purity = p0[1]
+    x0 = p0[2]
     t1 = p0[3]
     t2star = p0[4]
     Omega = p0[5]
@@ -350,7 +419,7 @@ def g2_rabi2(x, *p0):
     Gamma2 = 1/(2*t1) + 1/t2star
     p = Gamma1 + Gamma2
     q = complex(0) + np.emath.sqrt((Gamma1 - Gamma2)**2 - 4*Omega**2)
-    return np.real(cts - cts*purity*(p+q)*np.exp(-0.5*(p-q)*np.abs(x-x0))/(2*q) + cts*purity*(p-q)*np.exp(-0.5*(p+q)*np.abs(x-x0))/(2*q))
+    return np.real(amp * (1 - purity*(p+q)*np.exp(-0.5*(p-q)*np.abs(x-x0))/(2*q) + purity*(p-q)*np.exp(-0.5*(p+q)*np.abs(x-x0))/(2*q)))
 
 
 
