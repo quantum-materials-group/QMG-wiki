@@ -402,7 +402,7 @@ def g2_rabi(x, *p0):
         Delay time between photon detection events across APDs.
     *p0 : List
         [amplitude, purity, horizontal offset, lifetime, 
-         coherence time, Rabi frequency]
+         pure dephasing time, Rabi frequency]
 
     Returns
     -------
