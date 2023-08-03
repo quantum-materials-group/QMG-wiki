@@ -369,14 +369,17 @@ def g2_3LS(x, *p0):
     About: The second order correlation function for a three level system, 
            accounting for horizontal offset and vertical scaling. Relevant when
            values of g2 around the shoulder of the dip are greater than 1.0.
-           See Sontheimer 2017 10.1103/PhysRevB.96.121202
+           See Sontheimer 2017 10.1103/PhysRevB.96.121202 but note that our
+           function utilises a purity parameter (with range 0 to 1) where
+           Sontheimer uses unity, meaning our function accounts for experimental
+           values of g2(0) greater than 0.
 
     Parameters
     ----------
     x : 1D array
         Delay time between photon detection events across APDs.
     *p0 : List
-        [amplitude, horizontal offset, lifetime, 
+        [amplitude, purity, horizontal offset, lifetime, 
          bunching amplitude, bunching lifetime]
 
     Returns
@@ -385,11 +388,12 @@ def g2_3LS(x, *p0):
         Second order correlation.
     """
     amp = p0[0]
-    x0 = p0[1]
-    tau1 = p0[2]
-    bunching = p0[3]
-    tau2 = p0[4]
-    return amp * (1 - (1 + bunching) * np.exp( - np.abs(x - x0) / tau1) + bunching * np.exp( - np.abs(x - x0) / tau2))
+    purity = p0[1]
+    x0 = p0[2]
+    tau1 = p0[3]
+    bunching = p0[4]
+    tau2 = p0[5]
+    return amp * (1 - (purity + bunching) * np.exp( - np.abs(x - x0) / tau1) + bunching * np.exp( - np.abs(x - x0) / tau2))
 
 def g2_rabi(x, *p0):
     """
