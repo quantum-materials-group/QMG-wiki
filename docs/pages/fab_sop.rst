@@ -258,7 +258,7 @@ Sub menu, press together x 2:
      - ``<``
      
      
-Indigo Emitters in hBN 
+Blue Emitters in hBN 
 ---------------------
 **Pre-characterisation using Cathodoluminescence**
 
