@@ -262,42 +262,40 @@ Blue Emitters in hBN
 ---------------------
 **Pre-characterisation using Cathodoluminescence**
 
-Cathodoluminescence (CL) characterisation is nessesory for making blue emitters in **Pristine** and **Annealed** Japanese flakes.
+Cathodoluminescence (CL) characterisation is necessary for making blue emitters in **Pristine** and **Annealed** Japanese flakes.
 
-hBN flakes with a sharp UV emission at 305 nm (and associated phonon replicas at 320, 334, 351 nm) usually generate 436nm blue emission by electron irradiation.
+hBN flakes with a sharp UV emission at 305 nm (and associated phonon replicas at 320, 334, 351 nm) can host 436nm blue emitters after electron irradiation. However, the percentages of creation of blue emitters are different depending on the flake type. UV emission is not always uniform across a single hBN flake. See below for more info on hBN types.
 
-However, the percentages of cration of blue emitters are different depending on the flake type, annealing condition and other characteristics.
-From our tested results, Yellow (13C) flake always emits 436 nm emission even with short irradiation time. Annealed flakes has higher success rate compated to Pristine flakes.
+**Pristine:** As exfoliated high quality NIMS hBN (Japanese) requires pre-characterisation via CL. Only approx 5-10% of flakes have the required UV emission.
+**Pristine Annealed:** After annealing the NIMS hBN (Japanese) will have a higher percentage of flakes with UV emission. Pre-characterisation is still generally preferred as not all flakes show the UV emission.
+**Carbon Doped:** Blue emitters can be produced in all these flakes and pre-characterisation is not required. Generally the electron dose required for 436 nm emitter activation is significantly lower than the other hBN flakes.
 
-Reference: `Gale et.al. (2022)
-<https://pubs.acs.org/doi/10.1021/acsphotonics.2c00631>`_.
-
+NOTE: Thickness is especially important. Thicker flakes generally require a lower electron dose to activate emitters. 
 
 **Electron Beam Irradiation** 
 
-Tested condition
-   5 kV
-   beam current 0.8 nA
-   dwell time: 1 msec
-   
-- Pristine Japanese Flakes
-   Longer irradiation time or higher beam current is required.
-   4, 6, 9, 16, 25, 36, 49, 64 sec
-   Longer than 25 seconds of irradiation time usually works.
-   
-- Annealed Japanese Flakes (Annealed after the exfoliation)
-Annealing condition : 1000 degrees in Nitrogen for three hours. (The sample was measured for Blue photophysics paper)
-1, 2, 4, 6 sec in spot mode 
+Suitable Irradiation Conditions
+   Beam Energy: 1-15 keV
+   Beam Current: At least 0.8 nA
+   Dwell Time: At least 1 millisecond
+   Total Time: Varied based on flake type.
 
-- Yellow (13C) Flakes
-Tested condition
-0.5 sec or imaging (scanning) can activate blue emitters.
-1, 2, 4, 6 sec in spot mode 
-    
+As each flake is different it is important to test irradiations to achieve a suitable electron irradiation dose. Generally for carbon doped hBN the irradiation doses will be much lower than other hBN. For example a single spot may only require 0.5 s total time (~1 nA, 5kV) where pristine hBN may need >30 s for the same conditions.
+
+The Helios SEM can pattern arrays in multiple ways. Either individual spots (set the circle pattern to 0um radius) using the array builder. This works well if a dose series is required as each spot can have a specific dose. If larger arrays of the same dose are required, the rectangular pattern tool can be used. Individual spots can patterned by increasing the pixel spacing to achieve the desired distance between spots. By default it will be very small eg. <100 nm. 
+
+Regarding the chosen beam energy. 5 keV is a good starting point however increasing energy will result in slower activation rate. For the fastest activation rates use 3 keV if drift is controlled.
                                                             
 **Issues**
 
-Carbon conctamination
--> Use ozon cleaning before the irradiation and the measurements.
+Carbon contamination:
+Aim to have the cleanest hBN possible before beginning irradiations. Utilise one or more of hotplate annealing, plasma cleaning, ozone cleaning where applicable.
+Utilise ozone cleaning after irradiation to reduce the background PL from carbon deposition.
+
+Drift:
+Drift can be an issue when patterning with the SEM. If this occurs attempt to change the beam energy to reduce this, or use immersion mode.
 
 
+**More Info**
+Reference: `Gale et.al. (2022)
+<https://pubs.acs.org/doi/10.1021/acsphotonics.2c00631>`.
