@@ -2,7 +2,7 @@ How to add a new page
 =====================
 
 The first step is to consider whether your file should be an addition to 
-an existing SOP, or should be the start of a new SOP tree.
+an existing SOP, or should be the start of a new SOP tree. :)
 
 If you are adding to an existing file:
 
