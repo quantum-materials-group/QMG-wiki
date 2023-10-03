@@ -266,11 +266,11 @@ Cathodoluminescence (CL) characterisation is necessary for making blue emitters 
 
 hBN flakes with a sharp UV emission at 305 nm (and associated phonon replicas at 320, 334, 351 nm) can host 436nm blue emitters after electron irradiation. However, the percentages of creation of blue emitters are different depending on the flake type. UV emission is not always uniform across a single hBN flake. See below for more info on hBN types.
 
-**Pristine:** As exfoliated high quality NIMS hBN (Japanese) requires pre-characterisation via CL. Only approx 5-10% of flakes have the required UV emission.
+- **Pristine:** As exfoliated high quality NIMS hBN (Japanese) requires pre-characterisation via CL. Only approx 5-10% of flakes have the required UV emission.
 
-**Pristine Annealed:** After annealing the NIMS hBN (Japanese) will have a higher percentage of flakes with UV emission. Pre-characterisation is still generally preferred as not all flakes show the UV emission.
+- **Pristine Annealed:** After annealing the NIMS hBN (Japanese) will have a higher percentage of flakes with UV emission. Pre-characterisation is still generally preferred as not all flakes show the UV emission.
 
-**Carbon Doped:** Blue emitters can be produced in all these flakes and pre-characterisation is not required. Generally the electron dose required for 436 nm emitter activation is significantly lower than the other hBN flakes.
+- **Carbon Doped:** Blue emitters can be produced in all these flakes and pre-characterisation is not required. Generally the electron dose required for 436 nm emitter activation is significantly lower than the other hBN flakes.
 
 NOTE: Thickness is especially important. Thicker flakes generally require a lower electron dose to activate emitters. 
 
@@ -278,13 +278,13 @@ NOTE: Thickness is especially important. Thicker flakes generally require a lowe
 
 Suitable Irradiation Conditions
 
--Beam Energy: 1-15 keV
+- Beam Energy: 1-15 keV
    
--Beam Current: At least 0.8 nA
+- Beam Current: At least 0.8 nA
   
--Dwell Time: At least 1 millisecond
+- Dwell Time: At least 1 millisecond
    
--Total Time: Varied based on flake type.
+- Total Time: Varied based on flake type.
 
 As each flake is different it is important to test irradiations to achieve a suitable electron irradiation dose. Generally for carbon doped hBN the irradiation doses will be much lower than other hBN. For example a single spot may only require 0.5 s total time (~1 nA, 5kV) where pristine hBN may need >30 s for the same conditions.
 
@@ -294,11 +294,11 @@ Regarding the chosen beam energy. 5 keV is a good starting point however increas
                                                             
 **Issues**
 
-Carbon contamination:
+- Carbon contamination:
 Aim to have the cleanest hBN possible before beginning irradiations. Utilise one or more of hotplate annealing, plasma cleaning, ozone cleaning where applicable.
 Utilise ozone cleaning after irradiation to reduce the background PL from carbon deposition.
 
-Drift:
+- Drift:
 Drift can be an issue when patterning with the SEM. If this occurs attempt to change the beam energy to reduce this, or use immersion mode.
 
 
