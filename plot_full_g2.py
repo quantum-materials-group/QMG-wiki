@@ -18,7 +18,7 @@ if sys.path[0] != ptu_path:
 
 from readPTU import PTUfile, PTUmeasurement
 
-#%% Select .PHU file from popup window
+#%% Select .PTU file from popup window
 
 files_path = load_files()
 
