@@ -3,7 +3,7 @@ A collection of python functions all your data processing and analysis needs.
 Currently in no particular order.
 """
 
-__version__ = "0.1.0"
+__version__ = "2"
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -18,10 +18,15 @@ def load_files():
         A list of the file paths to each dataset selected. 
         If only one file is selected, then the list has only one element.
     """
+    
+    import os
+    file_dir = os.path.realpath(__file__)
+    file_dir = '\\'.join(file_dir.split('\\')[:-2])
+    
     from tkinter import filedialog, Tk
     root = Tk()
     root.withdraw()
-    files_path = filedialog.askopenfilenames(initialdir = "C:", title = "Select files", filetypes = (("all files","*.*"), ("text files","*.txt")))
+    files_path = filedialog.askopenfilenames(initialdir = file_dir, title = "Select files", filetypes = (("all files","*.*"), ("text files","*.txt")))
     root.attributes('-topmost', True)
     return files_path
 
