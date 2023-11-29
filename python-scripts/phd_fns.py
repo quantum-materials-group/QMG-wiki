@@ -234,6 +234,29 @@ def power_saturation(x, *p0):
     """
     return p0[0]*x / (x + p0[1])
 
+def power_saturation_bgc(x, *p0):
+    """
+    About: Power saturation in the presence of non-negligible background
+           scattering/fluorescence. The function has the form
+           I(P) = I_inf * P / (P + P_sat) + k * P
+           where the background is assumed to be linearly proportional to
+           excitation power with constant k.
+
+    Parameters
+    ----------
+    x : 1D array
+        Power values
+    *p0 : list
+        [I_inf, P_sat, k]
+
+    Returns
+    -------
+    1D array
+        Intensity values
+
+    """
+    return p0[0]*x / (x + p0[1]) + p0[2]*x
+
 def xy_bin(xs, ys, binNum):
     """
     About: Reduces density of data via averaging. Helpful for reducing figure clutter.
