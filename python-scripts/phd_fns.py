@@ -295,6 +295,41 @@ def xy_bin(xs, ys, binNum):
     xbin = xbin[:-1] + 0.5*(xbin[1] - xbin[0])
     return xbin, ybin
 
+def xy_bin_err(xs, ys, binNum):
+    """
+    About: also returns standard deviation per bin
+    
+    Parameters
+    ----------
+    xs : 1D array
+        x-axis data
+    ys : 1D array
+        y-axis data
+    binNum : int
+        Desired length of new arrays
+
+    Returns
+    -------
+    xbin : 1D array
+        x array with length binNum
+    ybin : 1D array
+        y array with length binNum
+    yerr : 1D array
+        error array with length binNum
+    """
+    xbin = np.linspace(min(xs), max(xs), binNum+1)
+    ybin = np.zeros(binNum)
+    yerr = np.zeros(binNum)
+    for j in range(binNum):
+        ys2 = ys[np.where((xs>xbin[j])&(xs<xbin[j+1]))]
+        if ys2.size>0:
+            ybin[j] = np.mean(ys[np.where((xs>xbin[j])&(xs<xbin[j+1]))])
+            yerr[j] = np.std(ys[np.where((xs>xbin[j])&(xs<xbin[j+1]))])
+        else:
+            ybin[j] = np.nan
+    xbin = xbin[:-1] + 0.5*(xbin[1] - xbin[0])
+    return xbin, ybin, yerr
+
 def moving_average(data, window_size):
     """
     About: transforms a dataset by replacing each datum with the average within
