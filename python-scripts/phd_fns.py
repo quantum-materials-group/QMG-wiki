@@ -3,7 +3,7 @@ A collection of python functions all your data processing and analysis needs.
 Currently in no particular order.
 """
 
-__version__ = "2"
+__version__ = "3"
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -329,6 +329,32 @@ def xy_bin_err(xs, ys, binNum):
             ybin[j] = np.nan
     xbin = xbin[:-1] + 0.5*(xbin[1] - xbin[0])
     return xbin, ybin, yerr
+
+def xy_subset(x, y, xL, xR):
+    """
+    About: gives a subset of x-y data based on x-range
+    
+    Parameters
+    ----------
+    xs : 1D array
+        x-axis data
+    ys : 1D array
+        y-axis data
+    xL : float
+        Minimum value of x-axis data
+    xR : float
+        Maximum value of x-axis data
+
+    Returns
+    -------
+    xs : 1D array
+        x array with length binNum
+    ys : 1D array
+        y array with length binNum
+    """
+    xs = x[np.where((x>xL) & (x<xR))]
+    ys = y[np.where((x>xL) & (x<xR))]
+    return xs, ys
 
 def moving_average(data, window_size):
     """
