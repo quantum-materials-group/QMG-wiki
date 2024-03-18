@@ -3,7 +3,7 @@ A collection of python functions all your data processing and analysis needs.
 Currently in no particular order.
 """
 
-__version__ = "3"
+__version__ = "4"
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -330,6 +330,74 @@ def xy_bin_err(xs, ys, binNum):
     xbin = xbin[:-1] + 0.5*(xbin[1] - xbin[0])
     return xbin, ybin, yerr
 
+def xy_bin_log(xs, ys, binNum):
+    """
+    About: Same as xy_bin() but returns logarithmic x-axis.
+    
+    Note: Best to fit functions to raw data, not this binned data.
+    
+    Parameters
+    ----------
+    xs : 1D array
+        x-axis data
+    ys : 1D array
+        y-axis data
+    binNum : int
+        Desired length of new arrays
+
+    Returns
+    -------
+    xbin : 1D array
+        x array with length binNum
+    ybin : 1D array
+        y array with length binNum
+    """
+    xbin = np.logspace(np.log(min(xs[xs>0])), np.log(max(xs)), binNum+1)
+    ybin = np.zeros(binNum)
+    for j in range(binNum):
+        ys2 = ys[np.where((xs>xbin[j])&(xs<xbin[j+1]))]
+        if ys2.size>0:
+            ybin[j] = np.mean(ys[np.where((xs>xbin[j])&(xs<xbin[j+1]))])
+        else:
+            ybin[j] = np.nan
+    xbin = xbin[:-1] + 0.5*(xbin[1] - xbin[0])
+    return xbin, ybin
+
+def xy_bin_log_err(xs, ys, binNum):
+    """
+    About: also returns standard deviation per bin
+    
+    Note: Best to fit functions to raw data, not this binned data.
+    
+    Parameters
+    ----------
+    xs : 1D array
+        x-axis data
+    ys : 1D array
+        y-axis data
+    binNum : int
+        Desired length of new arrays
+
+    Returns
+    -------
+    xbin : 1D array
+        x array with length binNum
+    ybin : 1D array
+        y array with length binNum
+    """
+    xbin = np.logspace(np.log(min(xs[xs>0])), np.log(max(xs)), binNum+1)
+    ybin = np.zeros(binNum)
+    yerr = np.zeros(binNum)
+    for j in range(binNum):
+        ys2 = ys[np.where((xs>xbin[j])&(xs<xbin[j+1]))]
+        if ys2.size>0:
+            ybin[j] = np.mean(ys[np.where((xs>xbin[j])&(xs<xbin[j+1]))])
+            yerr[j] = np.std(ys[np.where((xs>xbin[j])&(xs<xbin[j+1]))])
+        else:
+            ybin[j] = np.nan
+    xbin = xbin[:-1] + 0.5*(xbin[1] - xbin[0])
+    return xbin, ybin, yerr
+    
 def xy_subset(x, y, xL, xR):
     """
     About: gives a subset of x-y data based on x-range
@@ -354,6 +422,33 @@ def xy_subset(x, y, xL, xR):
     """
     xs = x[np.where((x>xL) & (x<xR))]
     ys = y[np.where((x>xL) & (x<xR))]
+    return xs, ys
+
+def xy_remove(x, y, xL, xR):
+    """
+    About: removes a subset of x-y data based on x-range. Useful for rejecting
+    crosstalk from a g2 fit.
+    
+    Parameters
+    ----------
+    xs : 1D array
+        x-axis data
+    ys : 1D array
+        y-axis data
+    xL : float
+        Minimum value of x-axis data
+    xR : float
+        Maximum value of x-axis data
+
+    Returns
+    -------
+    xs : 1D array
+        x array with length binNum
+    ys : 1D array
+        y array with length binNum
+    """
+    xs = x[np.where((x<xL) | (x>xR))]
+    ys = y[np.where((x<xL) | (x>xR))]
     return xs, ys
 
 def moving_average(data, window_size):
