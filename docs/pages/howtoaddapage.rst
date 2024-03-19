@@ -12,7 +12,7 @@ Step 1
 ======
 |add-to-existing-1|
 
-.. |add-to-existing-1| image:: ../_static/add-to-existing-1.png
+.. |add-to-existing-1| image:: ../_static/add-to-existing/add-to-existing-1.png
     :width: 100%
 
 ======
@@ -20,7 +20,7 @@ Step 2
 ======
 |add-to-existing-2|
 
-.. |add-to-existing-2| image:: ../_static/add-to-existing-2.png
+.. |add-to-existing-2| image:: ../_static/add-to-existing/add-to-existing-2.png
     :width: 100% 
 
 ======
@@ -28,7 +28,7 @@ Step 3
 ======
 |add-to-existing-3|
 
-.. |add-to-existing-3| image:: ../_static/add-to-existing-3.png
+.. |add-to-existing-3| image:: ../_static/add-to-existing/add-to-existing-3.png
     :width: 100% 
 
 ======
@@ -36,7 +36,7 @@ Step 4
 ======
 |add-to-existing-4|
 
-.. |add-to-existing-4| image:: ../_static/add-to-existing-4.png
+.. |add-to-existing-4| image:: ../_static/add-to-existing/add-to-existing-4.png
     :width: 60% 
 
 ======
@@ -44,7 +44,7 @@ Step 5
 ======
 |add-to-existing-5|
 
-.. |add-to-existing-5| image:: ../_static/add-to-existing-5.png
+.. |add-to-existing-5| image:: ../_static/add-to-existing/add-to-existing-5.png
     :width: 60% 
 
 ======
@@ -52,7 +52,7 @@ Step 6
 ======
 |add-to-existing-6|
 
-.. |add-to-existing-6| image:: ../_static/add-to-existing-6.png
+.. |add-to-existing-6| image:: ../_static/add-to-existing/add-to-existing-6.png
     :width: 60% 
 
 If you need to create a new SOP file:
