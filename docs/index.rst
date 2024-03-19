@@ -23,9 +23,8 @@ Contents
    pages/pl_sop
    pages/data_processing_sop
    pages/notes
+   pages/reference_mgmt 
    pages/howtoaddapage
    pages/sportshall
    api
    pages/orders_&_shipping
-
-7
