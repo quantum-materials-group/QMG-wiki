@@ -16,7 +16,7 @@ Faceilities include:
 
 - a dance studio
 
-- gymnasium
+- a gymnasium
 
 - a tutorial room
 
