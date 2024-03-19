@@ -68,6 +68,49 @@ Creating a new SOP file:
 3. Make reference to this file in this file in the "/docs/index.rst" toctree (table of contents).
 4. Stage, Commit and push all your changes to the main branch.
 
+
+**Step 1**
+
+|add-to-new-1|
+
+.. |add-to-new-1| image:: ../_static/add-to-new/add-to-new-1.png
+    :width: 100%
+
+**Step 2**
+
+|add-to-new-2|
+
+.. |add-to-new-2| image:: ../_static/add-to-new/add-to-new-2.png
+    :width: 100%
+
+**Step 3**
+
+|add-to-new-3|
+
+.. |add-to-new-3| image:: ../_static/add-to-new/add-to-new-3.png
+    :width: 100%
+
+**Step 4**
+
+|add-to-new-4|
+
+.. |add-to-new-4| image:: ../_static/add-to-new/add-to-new-4.png
+    :width: 50%
+
+**Step 5**
+
+|add-to-new-5|
+
+.. |add-to-new-5| image:: ../_static/add-to-new/add-to-new-5.png
+    :width: 100%
+
+**Step 6**
+
+|add-to-new-6|
+
+.. |add-to-new-6| image:: ../_static/add-to-new/add-to-new-6.png
+    :width: 70%
+
 Always! Check your changes have rendered the way you expect on the QMG-wiki readthedocs_.
 
 .. _readthedocs: http://qmg-wiki.rtfd.io/
