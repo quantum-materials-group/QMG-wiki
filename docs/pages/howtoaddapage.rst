@@ -5,7 +5,7 @@ The first step is to consider whether your file should be an addition to
 an existing SOP, or should be the start of a new SOP tree. Let's explore the difference.
 
 ===========================
-Adding to an existing file:
+Adding to an existing file
 ===========================
 - Open that file, make changes, commit those changes, and push it to the main branch.
 
@@ -57,17 +57,9 @@ Adding to an existing file:
     :width: 60% 
 
 ========================
-Creating a new SOP file:
+Creating a new SOP file
 ========================
-1. Head over to the "QMG-wiki/docs/pages" directory and make a "mynewpage.rst" file.
-
-2. Write your new sop using the reStucturedText_ syntax
-
-.. _reStucturedText: https://github.com/ralsina/rst-cheatsheet/blob/master/rst-cheatsheet.rst
-
-3. Make reference to this file in this file in the "/docs/index.rst" toctree (table of contents).
-4. Stage, Commit and push all your changes to the main branch.
-
+- Prepare your document offline as much as possible before adding it to the wiki. Once ready, follow these steps:
 
 **Step 1**
 
