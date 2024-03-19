@@ -7,10 +7,12 @@ Once in a while when Supreme Leader Igor permits non-laboratory-based activities
 
 The sports hall can facilitate sports games for team building purposes and for good health.
 
-The halls are extremely popular and must be booked well in advance during the semester.
+The halls are extremely popular and must be booked well in advance during the semester. 
+
+The RMSH is located in Building 4B.
 
 
-Faceilities include:
+Facilities include:
 
 - a full sized basketball court
 
