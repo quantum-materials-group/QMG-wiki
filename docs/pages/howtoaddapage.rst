@@ -9,7 +9,7 @@ Adding to an existing file:
 ===========================
 - Open that file, make changes, commit those changes, and push it to the main branch.
 
-Step 1
+**Step 1**
 
 |add-to-existing-1|
 
@@ -17,7 +17,7 @@ Step 1
     :width: 100%
 
 
-Step 2
+**Step 2**
 
 |add-to-existing-2|
 
@@ -25,7 +25,7 @@ Step 2
     :width: 100% 
 
 
-Step 3
+**Step 3**
 
 |add-to-existing-3|
 
@@ -33,7 +33,7 @@ Step 3
     :width: 100% 
 
 
-Step 4
+**Step 4**
 
 |add-to-existing-4|
 
@@ -41,7 +41,7 @@ Step 4
     :width: 60% 
 
 
-Step 5
+**Step 5**
 
 |add-to-existing-5|
 
@@ -49,7 +49,7 @@ Step 5
     :width: 60% 
 
 
-Step 6
+**Step 6**
 
 |add-to-existing-6|
 
