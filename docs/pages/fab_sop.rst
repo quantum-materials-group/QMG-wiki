@@ -305,3 +305,64 @@ Drift can be an issue when patterning with the SEM. If this occurs attempt to ch
 **More Info**
 Reference: `Gale et.al. (2022)
 <https://pubs.acs.org/doi/10.1021/acsphotonics.2c00631>`.
+
+
+VB- Emitters in hBN/BNNTs
+-------------------------
+Not all flakes have been tested for VB- creation, but Pristine Japanese flakes are most used. (See above for descriptions).
+VB- does not survive high temperatures, so if your fabrication requires any annealing/harsh cleaning steps, irradiate as your last step.
+
+To achieve an ideal pure beam, the species should be switched as early as possible. Switching beams right before irradiating will still create VB-, but for the best results, change the beam and ignite the nitrogen plasma a few hours before or even the night before.
+
+*will insert helios screenshot later*
+
+
+If you have not been trained on the ion plasma controls, do not change anything. Just make sure it says “Plasma ignited”, and on the Helios interface the “Beam On” button is not greyed out. This means the nitrogen plasma is running, and the longer it runs, the cleaner the beam will be.
+
+To avoid carbon contamination, try to avoid imaging. Although it is necessary to use the electron beam to find the flake of interest, avoid taking high quality long exposure images. You should still save a fast, lower quality image to capture the exact irradiation region.
+
+**Ion Beam Irradiation**
+
+Suitable Irradiation Conditions
+
+- Beam Species: Nitrogen
+
+- Beam Energy: 1-30 keV 
+
+- Beam Current: At least 0.1 nA
+
+- Dwell Time: 300 ns – 1 us 
+
+- Dose: 1E14 N/cm
+
+- Overlap: As close to 100% as possible
+
+- Total Time: Varied based on irradiation size.
+
+Use the dose equation to find the correct time based on your irradiation box size.
+
+*will insert equation later*
+
+The following figure represents the boron vacancy distribution with various nitrogen beam energies. The peak of each curve marks the point of most damage, where the most boron vacancies will be created. Some things to note:
+
+-	SRIM does not account for ion channelling. The incident ions will travel further through the crystal than shown here
+
+-	Higher energies will reach further into the crystal than lower energies
+
+-	The same trends are also seen for nitrogen vacancies. Be aware that too many vacancies created will lead to amorphization and the VB- signal will be impacted.
+
+-	For thinner flakes (under 10 nm), it may be best to use higher energies. The beam will pass through and not create too many defects, so the lattice structure can still hold itself and host the VB-. 
+ 
+
+**Issues:**
+VB- creation experiences similar issues to blue emitter creation. See above to minimise carbon contamination and drift. Drift can also be helped with nearby conductive materials, such as metal clamp stubs or copper tape near the flake of interest. However, these contacts will result in more contamination.
+
+More info: Hennessey et.al. (2024) <https://doi.org/10.1002/qute.202300459>
+(Comparing energies/beam species/carbon contamination/sputter yields)
+
+Note: Hydrogen does create VB- but nitrogen is more reliable.
+
+
+
+
+
