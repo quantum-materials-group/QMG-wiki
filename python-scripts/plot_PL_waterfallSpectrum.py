@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from phd_fns import load_files, singleSpectrum, save_figure, save_figure_here
+from phd_fns import load_files, waterfallSpectrum, save_figure, save_figure_here
 
 #%%
 
