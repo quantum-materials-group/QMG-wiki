@@ -62,7 +62,7 @@ def save_figure_here(file_path):
     empty
     """
     folder_path = "/".join(file_path.split('/')[:-1])
-    img_name = file_path.split('/')[-1].split('.')[0]
+    img_name = file_path.split('/')[-1][:-4]
     plt.savefig(folder_path + '/' + img_name + '.png')
 
 def Lorentzian_FWHM(x, *p0):
