@@ -3,7 +3,7 @@ A collection of python functions all your data processing and analysis needs.
 Currently in no particular order.
 """
 
-__version__ = "5"
+__version__ = "6"
 
 import numpy as np
 import matplotlib.pyplot as plt
