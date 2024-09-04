@@ -3,7 +3,7 @@ A collection of python functions all your data processing and analysis needs.
 Currently in no particular order.
 """
 
-__version__ = "6"
+__version__ = "7"
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -472,6 +472,26 @@ def moving_average(data, window_size):
     window = np.ones(int(window_size))/float(window_size)
     return np.convolve(data, window, 'same')
 
+def nm2meV(x):
+    """
+    About: Convert an array from units of wavelength to units of energy. Useful for
+           PL spectrum plots that need wavelength as well as energy.
+
+    Parameters
+    ----------
+    x : 1D array
+        Absolute wavelength values in nanometres
+
+    Returns
+    -------
+    1D array
+        Absolute energy values in millielectron volts
+    """
+    h = 6.626e-34       # m^2 kg / s
+    c = 299792458       # m / s
+    k = 6.242e21        # converts Newton-metres to millielectron-volts
+    return h * c * k * 1e9 / x
+    
 def nm2meV_relative(x, lambda0):
     """
     About: Convert an array from units of wavelength to units of energy, where
@@ -497,6 +517,27 @@ def nm2meV_relative(x, lambda0):
     k = 6.242e21        # converts Newton-metres to millielectron-volts
     return h * c * k * 1e9 * ( 1 / x - 1 / lambda0 )
 
+def meV2nm(x):
+    """
+    About: Convert an array from units of energy to units of wavelength. Useful for
+           PL spectrum plots that need absolute wavelength as well as energy.
+           {Functionally equivalent to nm2meV()}
+           
+    Parameters
+    ----------
+    x : 1D array
+        Absolute energy values in millielectron volts
+
+    Returns
+    -------
+    1D array
+        Absolute wavelength values in nanometres
+    """
+    h = 6.626e-34       # m^2 kg / s
+    c = 299792458       # m / s
+    k = 6.242e21        # converts Newton-metres to millielectron-volts
+    return h * c * k * 1e9 / x
+    
 def meV2nm_relative(x, lambda0):
     """
     About: Convert an array from units of energy to units of wavelength, where
@@ -521,6 +562,32 @@ def meV2nm_relative(x, lambda0):
     c = 299792458       # m / s
     k = 6.242e21        # converts Newton-metres to millielectron-volts
     return h * c * k * 1e9 * lambda0 / (x * lambda0 + h * c * k * 1e9)
+
+def ASD(data, freq):
+    '''
+    About: Transforms a signal from the time domain to the frequency domain
+           via fast Fourier Transform (FFT). The units of the output are the
+           amplitudes of constituent sinusoids of varying frequency.
+    Parameters
+    ----------
+    data : 1D array
+        Time series of signal in time domain [s].
+    freq : float
+        Sample rate of time series [Hz].
+
+    Returns
+    -------
+    1D array
+        Frequencies [Hz]
+    1D array
+        Amplitude of each frequency [V]
+
+    '''
+    L = len(data)
+    freqs = freq * np.fft.fftfreq(L)
+    mask = freqs>0
+    asd = 2*np.abs(np.fft.fft(data)/L)
+    return freqs[mask], asd[mask]
 
 def g2_2LS(x, *p0):
     """
