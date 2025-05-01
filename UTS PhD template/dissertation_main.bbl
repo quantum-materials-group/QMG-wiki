@@ -1,0 +1,20 @@
+\begin{thebibliography}{2}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Ebejer et~al.(2012)Ebejer, Morris, and Deane]{Ebejer2012}
+J.-P. Ebejer, G.~M. Morris, and C.~M. Deane.
+\newblock Freely available conformer generation methods: How good are they?
+\newblock \emph{J. Chem. Inf. Model.}, 52\penalty0 (5):\penalty0 1146--1158, 2012.
+\newblock \doi{10.1021/ci2004658}.
+
+\bibitem[Einstein(1905)]{Einstein1905}
+A.~Einstein.
+\newblock {Zur Elektrodynamik bewegter K{\"o}rper}. ({German}) [{On} the electrodynamics of moving bodies].
+\newblock \emph{Annalen der Physik}, 322\penalty0 (10):\penalty0 891--921, 1905.
+\newblock \doi{http://dx.doi.org/10.1002/andp.19053221004}.
+
+\end{thebibliography}

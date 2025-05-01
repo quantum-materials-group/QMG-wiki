@@ -1,0 +1,49 @@
+\RequirePackage[l2tabu, orthodox]{nag}
+
+
+\documentclass[twoside]{um}  % custom University of Malta project/dissertation/thesis 
+
+
+\usepackage{blindtext} %% for some dummy text, remove in your writeup
+\usepackage{bm}
+\usepackage{natbib}
+
+
+\graphicspath{{./images/}{./chap1/images/}}
+
+\makeindex
+
+
+\begin{document}
+
+\frontmatter 
+    \maketitle
+    \input{frontmatter/originality}
+    \input{frontmatter/dedication}
+    \input{frontmatter/acknowledgements}
+    \input{frontmatter/abstract}
+    \input{frontmatter/publications}\if@openright\cleardoublepage\else\clearpage\fi
+    \tableofcontents*\if@openright\cleardoublepage\else\clearpage\fi
+    \input{frontmatter/abbreviations}\if@openright\cleardoublepage\else\clearpage\fi
+
+\pagestyle{umpage}
+\mainmatter 
+    \input{chap1/intro_main} 
+    \input{chap2/background_main} 
+    \input{chap3/methods_main}
+    \input{chap4/paper1_main}
+    \input{chap5/paper2_main}
+    \input{chap6/paper3_main}
+    %\input{chap7/paper4_main} % uncomment to add extra chapter
+    \input{chap8/future_work_main}
+    \input{chap9/conclusion_main}
+    \appendix
+        \input{appA/appendix_a_main}
+
+{\backmatter
+    \if@openright\cleardoublepage\else\clearpage\fi
+    \bibliographystyle{abbrvnat}
+    \bibliography{chap1/introduction_biblio,chap2/background_biblio}
+}
+
+\end{document}
