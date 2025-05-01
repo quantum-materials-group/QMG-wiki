@@ -32,4 +32,6 @@ Writing your thesis with LaTeX + VS Code
 
 - Download the "UTS PhD template" folder from here.
 
-- Once TeX has finished installing, start VS Code and open the UTS PhD template folder. Select dissertation_main.tex and go to the TeX tab then hit Build LaTeX project. 
+- Once TeX has finished installing, start VS Code and open the UTS PhD template folder. Select ``dissertation_main.tex`` and go to the bottom "TeX" tab on the right, then hit "Build LaTeX project". 
+
+- Don't forget to back up your thesis folder somewhere, e.g. OneDrive, Z drive, desktop, github (probably there is a way to use VS Code to sync with github)
