@@ -76,6 +76,7 @@ yfit -= base
 norm = np.mean(maxes[-pulse_right+1:])
 ys /= norm
 yfit /= norm
+maxes /= norm
 
 plt.plot(xs, ys, '.', ms=2, c='C0', alpha=0.3, label='Data')
 plt.plot(xfit, yfit, c='C1', label='Fit')
