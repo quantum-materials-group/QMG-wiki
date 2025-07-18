@@ -676,7 +676,28 @@ def g2_rabi(x, *p0):
     q = complex(0) + np.emath.sqrt((Gamma1 - Gamma2)**2 - 4*Omega**2)
     return np.real(amp * (1 - purity*(p+q)*np.exp(-0.5*(p-q)*np.abs(x-x0))/(2*q) + purity*(p-q)*np.exp(-0.5*(p+q)*np.abs(x-x0))/(2*q)))
 
+def double_sided_exp(x, *p0):
+     """
+    About: For use in pulsed g2 fits.
 
+    Parameters
+    ----------
+    x : 1D array
+        Delay time between photon detection events across APDs.
+    *p0 : List
+        [amplitude, horizontal offset, lifetime, 
+         vertical offset]
+
+    Returns
+    -------
+    1D array
+        Second order correlation.
+    """
+    A = p0[0]
+    x0 = p0[1]
+    T1 = p0[2]
+    c = p0[3]
+    return A * np.exp(-np.abs(x - x0)/T1) + c
 
 
 
