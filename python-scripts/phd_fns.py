@@ -677,7 +677,7 @@ def g2_rabi(x, *p0):
     return np.real(amp * (1 - purity*(p+q)*np.exp(-0.5*(p-q)*np.abs(x-x0))/(2*q) + purity*(p-q)*np.exp(-0.5*(p+q)*np.abs(x-x0))/(2*q)))
 
 def double_sided_exp(x, *p0):
-     """
+    """
     About: For use in pulsed g2 fits.
 
     Parameters
