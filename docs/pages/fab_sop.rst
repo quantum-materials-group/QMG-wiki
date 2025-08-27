@@ -115,6 +115,8 @@ Oxygen Plasma Cleaning
 
 Chemical Vapour Deposition - SEKI
 ----------------------------------
+Please note that this is not a recipe for good growth of materials. It is to utilise the plasma for cleaning/defect activation.
+
 
 1. Check that pump is attached to the main setup, make sure dial is turned off and the pumping valve is also off when starting.
 
@@ -199,7 +201,6 @@ Place on heat stage to cure:
 Lindberg Blue Tube Furnace (max 1100 C)
 ---------------------------------------
 
-**INCOMPLETE 07/10/22**
 
 Stuff you need:
 
