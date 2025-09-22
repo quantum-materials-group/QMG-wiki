@@ -699,7 +699,24 @@ def double_sided_exp(x, *p0):
     c = p0[3]
     return A * np.exp(-np.abs(x - x0)/T1) + c
 
+def sort_by_x(x, y):
+    """
+    About: To sort two arrays relative to the first array.
+    
+    Parameters
+    ----------
+    x : arbitrary 1D array
+    y : arbitrary 1D array
 
+    Returns
+    -------
+    2x1D array, where elements in both arrays are sorted according to x
+    """
+    a = np.vstack((x, y)).T
+    a = a[a[:, 0].argsort()]
+    x = a[:,0]
+    y = a[:,1]
+    return x, y
 
 
 
